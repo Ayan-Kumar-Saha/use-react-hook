@@ -1,4 +1,5 @@
 import { INavLink } from "../interfaces/nav-link";
+import ClickedOutsidePage from "../pages/ClickedOutsidePage";
 import DebouncePage from "../pages/DebouncePage";
 import LocalStorageHookPage from "../pages/LocalStoragePage";
 import NetworkStatusPage from "../pages/NetworkStatusPage";
@@ -21,5 +22,11 @@ export const NAV_LINKS: INavLink[] = [
         name: 'useNetworkStatus',
         path: '/network-status',
         element: NetworkStatusPage
+    },
+    {
+        id: 4,
+        name: 'useClickedOutsidePage',
+        path: '/clicked-outside',
+        element: ClickedOutsidePage
     }
 ]
