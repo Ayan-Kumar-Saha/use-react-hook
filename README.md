@@ -1,54 +1,45 @@
-# React + TypeScript + Vite
+# 🧰 use react hook
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A collection of custom React hooks to sharpen your skills — from **basic to advanced**. Each hook solves a real-world problem and is written with reusability in mind.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🎯 Purpose
 
-## Expanding the ESLint configuration
+This project is a list of important react hooks along with code to practice hands-on implementation. While it's built for my own learning, others are welcome to explore and practice with these hooks.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+⚠️ Note: This project has no affiliation with usehooks.com and is not intended as a replacement or alternative. If you're looking for production-ready hooks, please use the well-maintained [usehooks](https://usehooks.com/) instead.
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+I currently have no plans to release this as a library, since useHooks already exist. That said, if time permits, I might turn this into a full-featured interactive playground for learning and demoing.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 📁 Structure
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+Hooks are organized by complexity and use case:
+
+---
+
+## 🧪 Hooks Included
+
+| Hook                      | Category     | Description                          |
+| ------------------------- | ------------ | ------------------------------------ |
+| `useLocalStorage`         | Basic        | Persist state to localStorage        |
+| `usePrevious`             | Basic        | Track previous value of a state/prop |
+| `useDebounce`             | Basic        | Debounce value changes with delay    |
+| `useNetworkStatus`        | Basic        | Detect online/offline status         |
+| `useClickOutside`         | Intermediate | Detect outside clicks of an element  |
+| `useMediaQuery`           | Intermediate | Match CSS media queries              |
+| `useIntersectionObserver` | Advanced     | Track element visibility in viewport |
+| `useEventListener`        | Intermediate | Add DOM event listeners with cleanup |
+
+---
+
+## 🚀 Getting Started
+
+```bash
+git clone https://github.com/Ayan-Kumar-Saha/use-react-hook.git
+cd use-react-hook
+npm install
+npm run dev
 ```
