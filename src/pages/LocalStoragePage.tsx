@@ -1,6 +1,7 @@
+import { FunctionComponent } from "react";
 import useLocalStorage from "../hooks/basic/useLocalStorage";
 
-const LocalStorageHookPage = () => {
+const LocalStorageHookPage: FunctionComponent = () => {
     const [count, setCount] = useLocalStorage<number>("counter", 0);
     return (
         <div>

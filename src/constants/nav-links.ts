@@ -1,6 +1,7 @@
 import { INavLink } from "../interfaces/nav-link";
 import DebouncePage from "../pages/DebouncePage";
-import LocalStorageHookPage from "../pages/LocalStorageHookPage";
+import LocalStorageHookPage from "../pages/LocalStoragePage";
+import NetworkStatusPage from "../pages/NetworkStatusPage";
 
 export const NAV_LINKS: INavLink[] = [
     {
@@ -14,5 +15,11 @@ export const NAV_LINKS: INavLink[] = [
         name: 'useDebounce',
         path: '/debounce',
         element: DebouncePage
+    },
+    {
+        id: 3,
+        name: 'useNetworkStatus',
+        path: '/network-status',
+        element: NetworkStatusPage
     }
 ]

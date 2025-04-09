@@ -1,7 +1,7 @@
-import { useState } from "react";
+import { FunctionComponent, useState } from "react";
 import useDebounce from "../hooks/basic/useDebounce";
 
-const DebouncePage = () => {
+const DebouncePage: FunctionComponent = () => {
     const delay: number = 1000;
     const [input, setInput] = useState("");
     const debouncedInput = useDebounce(input, delay);
@@ -22,7 +22,6 @@ const DebouncePage = () => {
                 <div className="mt-4 text-xl">Debounced Input: {debouncedInput}</div>
             </div>
         </div>
-
     );
 }
 
