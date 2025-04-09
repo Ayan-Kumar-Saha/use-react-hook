@@ -1,5 +1,5 @@
 import { FunctionComponent, useRef } from "react";
-import useClickedOutside from "../hooks/basic/useClickedOutside";
+import useClickedOutside from "../hooks/intermediate/useClickedOutside";
 
 const ClickedOutsidePage: FunctionComponent = () => {
 
